@@ -15,8 +15,8 @@ hero:
 ---
 
 <script setup>
-import CardGrid from '../.vitepress/theme/components/CardGrid.vue'
-import Card from '../.vitepress/theme/components/Card.vue'
+import CardGrid from './.vitepress/theme/components/CardGrid.vue'
+import Card from './.vitepress/theme/components/Card.vue'
 </script>
 
 ## Why OpenCyvis

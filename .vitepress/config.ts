@@ -4,8 +4,6 @@ export default defineConfig({
   title: 'OpenCyvis',
   description: 'The open-source AI phone.',
 
-  ignoreDeadLinks: true,
-
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo-light.svg' }],
   ],
