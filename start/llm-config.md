@@ -46,7 +46,7 @@ Save multiple configurations (e.g. "Work Qwen", "Home Gemma", "Claude") and swit
 | | Cloud Models | Local Models (Ollama) |
 |---|---|---|
 | **Privacy** | Data sent to API | Nothing leaves device |
-| **Speed** | 3-8s per step | 1.5-3s per step (with GPU) |
+| **Speed** | 2-8s per step | 7-10s per step (with GPU) |
 | **Quality** | Highest reasoning | Good, improving fast |
 | **Cost** | Pay per token | Free (hardware cost) |
 | **Offline** | ❌ | ✅ |
