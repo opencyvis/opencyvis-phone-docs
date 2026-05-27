@@ -33,7 +33,7 @@
 **症状：** AI 在运行但看到的截图是空的。
 
 **解决方案：**
-1. 标准模式依赖 MediaProjection — 确认权限已授予
+1. 标准模式通过 Mirror VD + ImageReader 截屏 — 如果虚拟显示器未运行，重启 App
 2. 部分应用使用 FLAG_SECURE，标准模式无法截取
 3. 系统 App 模式使用 SurfaceControl，可绕过 FLAG_SECURE
 

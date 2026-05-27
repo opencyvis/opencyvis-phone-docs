@@ -33,7 +33,7 @@
 **Symptom:** The AI operates but the screenshots it sees are empty.
 
 **Solutions:**
-1. Standard mode relies on MediaProjection — make sure the permission was granted
+1. Standard mode captures screenshots via Mirror VD + ImageReader — if the virtual display isn't running, restart the app
 2. Some apps use FLAG_SECURE which blocks screenshot capture in standard mode
 3. System App mode uses SurfaceControl which bypasses FLAG_SECURE
 

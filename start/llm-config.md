@@ -27,6 +27,16 @@ adb shell am start -a android.intent.action.VIEW \
   -d "opencyvis://config?provider=openai&base_url=https://api.example.com/v1&api_key=YOUR_KEY&model=qwen-vl-max"
 ```
 
+## Share Config via QR Code
+
+Need to set up OpenCyvis on another phone? Export your current LLM configuration as a QR code, then scan it on the target device to import everything — provider type, base URL, API key, and model name — in one step.
+
+Go to **Settings → LLM Provider → Share** to generate a QR code. On the receiving device, tap **Scan QR Code** in the setup wizard.
+
+<Callout type="warning">
+QR codes encode your API key. Only share them with people you trust, and over private channels.
+</Callout>
+
 ## Provider Profiles
 
 Save multiple configurations (e.g. "Work Qwen", "Home Gemma", "Claude") and switch with one tap. See [Provider Profiles](/features/provider-profiles).

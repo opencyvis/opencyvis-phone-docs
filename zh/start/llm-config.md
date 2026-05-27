@@ -27,6 +27,16 @@ adb shell am start -a android.intent.action.VIEW \
   -d "opencyvis://config?provider=openai&base_url=https://api.example.com/v1&api_key=YOUR_KEY&model=qwen-vl-max"
 ```
 
+## 扫码分享配置
+
+需要在另一台手机上配置 OpenCyvis？将当前 LLM 配置导出为二维码，目标设备扫码即可一键导入——Provider 类型、Base URL、API Key、模型名全部带入。
+
+进入 **设置 → LLM Provider → 分享** 生成二维码。接收端在设置向导中点击 **扫码导入**。
+
+<Callout type="warning">
+二维码中包含 API Key，请仅私下分享给你信任的人。
+</Callout>
+
 ## Provider 配置方案
 
 支持保存多套配置（如"公司 Qwen"、"家里 Gemma"、"Claude"），一键切换。详见 [Provider 配置方案](/zh/features/provider-profiles)。
