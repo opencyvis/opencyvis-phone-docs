@@ -26,11 +26,15 @@ OpenCyvis 通过 ADB 无线调试获取与系统应用相同等级的权限。Ap
 
 ### 第 3 步：与 OpenCyvis 配对
 
-1. 打开 OpenCyvis，设置向导会自动启动
-2. App 会显示一个配对码
-3. 在手机的「无线调试」页面点击 **使用配对码配对设备**
-4. 输入 App 显示的配对码
+1. 打开 OpenCyvis，设置向导会自动启动并把你带到 **无线调试** 页面
+2. 在「无线调试」页面点击 **使用配对码配对设备**
+3. 系统弹窗显示一个 6 位配对码
+4. **下拉通知栏**，在 OpenCyvis 通知里点击 **点此输入配对码**，输入这 6 位配对码
 5. 配对成功后，App 自动连接
+
+<Callout type="tip">
+配对码是输入到 OpenCyvis 的**通知**里，而不是切回 App 输入——这样即使 App 在后台也能完成配对。如果没看到通知，下拉一次通知栏，找到 OpenCyvis 的「点此输入配对码」通知即可。
+</Callout>
 
 ### 第 4 步：授予权限
 
@@ -52,11 +56,15 @@ App 会请求以下权限：
 </details>
 
 <details>
-<summary>OPPO / ColorOS</summary>
+<summary>OPPO / 一加 / ColorOS</summary>
 
 **设置 → 关于手机 → 版本信息 → 版本号**（连点 7 次）
 
 然后：**设置 → 关于手机 → 开发者选项 → 无线调试**
+
+<Callout type="warning">
+ColorOS 会激进地冻结后台应用。配对时如果系统提示，请为 OpenCyvis **允许后台运行 / 忽略电池优化**——否则配对服务可能在配对完成前被冻结。（OpenCyvis 已通过"在通知里完成配对"规避了这个问题，但授予豁免会更稳定。）
+</Callout>
 </details>
 
 <details>

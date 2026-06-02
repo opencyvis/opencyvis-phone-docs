@@ -26,11 +26,15 @@ Some manufacturers hide or rename this option. See OEM-specific paths below.
 
 ### Step 3: Pair with OpenCyvis
 
-1. Open OpenCyvis, the setup wizard will start automatically
-2. The app shows you a pairing code
-3. On your phone, tap **Pair device** in the Wireless Debugging screen
-4. Enter the pairing code from the app
+1. Open OpenCyvis — the setup wizard starts automatically and sends you to **Wireless debugging**
+2. On the Wireless debugging screen, tap **Pair device with pairing code**
+3. Android shows a 6-digit pairing code
+4. **Pull down the notification shade** and tap **Enter pairing code** on the OpenCyvis notification, then type the 6-digit code
 5. Once paired, the app connects automatically
+
+<Callout type="tip">
+You enter the code into the OpenCyvis **notification**, not back inside the app. This lets pairing finish even while the app is in the background. If you don't see the notification, pull down the shade once and look for the OpenCyvis "Enter pairing code" notification.
+</Callout>
 
 ### Step 4: Grant Permissions
 
@@ -52,11 +56,15 @@ If you don't see it, make sure MIUI Optimization is disabled in Developer option
 </details>
 
 <details>
-<summary>OPPO / ColorOS</summary>
+<summary>OPPO / OnePlus / ColorOS</summary>
 
 **Settings → About device → Version → Build number** (tap 7x)
 
 Then: **Settings → About device → Developer options → Wireless debugging**
+
+<Callout type="warning">
+ColorOS aggressively freezes background apps. When prompted during pairing, **allow background activity / ignore battery optimization** for OpenCyvis — otherwise the pairing service can be suspended before pairing completes. (OpenCyvis already works around this by letting you finish pairing from the notification, but granting the exemption makes it more reliable.)
+</Callout>
 </details>
 
 <details>
