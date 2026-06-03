@@ -18,8 +18,9 @@ For most users, choose **Standard**. Install like any Android app.
 Open the app and follow the setup wizard:
 
 1. The app guides you to **Developer Options → Wireless Debugging**
-2. Tap **Pair device**, enter the pairing code shown in the app
-3. Once paired, the app automatically connects via ADB
+2. Tap **Pair device with pairing code** — Android shows a 6-digit code
+3. **Pull down the notification shade**, tap **Enter pairing code** on the OpenCyvis notification, and type the 6-digit code
+4. Once paired, the app automatically connects via ADB
 
 No root, no computer, no custom ROM required. For OEM-specific paths (MIUI, ColorOS, OriginOS), see [Standard Mode](/start/standard-mode).
 

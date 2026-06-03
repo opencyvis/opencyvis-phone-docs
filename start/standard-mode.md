@@ -26,14 +26,20 @@ Some manufacturers hide or rename this option. See OEM-specific paths below.
 
 ### Step 3: Pair with OpenCyvis
 
-1. Open OpenCyvis — the setup wizard starts automatically and sends you to **Wireless debugging**
+1. Open OpenCyvis — the setup wizard starts automatically and takes you to **Wireless debugging**
 2. On the Wireless debugging screen, tap **Pair device with pairing code**
-3. Android shows a 6-digit pairing code
-4. **Pull down the notification shade** and tap **Enter pairing code** on the OpenCyvis notification, then type the 6-digit code
+3. A system dialog shows a 6-digit pairing code
+4. **Pull down the notification shade**, tap **Enter pairing code** on the OpenCyvis notification, and type the 6-digit code
 5. Once paired, the app connects automatically
 
 <Callout type="tip">
-You enter the code into the OpenCyvis **notification**, not back inside the app. This lets pairing finish even while the app is in the background. If you don't see the notification, pull down the shade once and look for the OpenCyvis "Enter pairing code" notification.
+You enter the code into the OpenCyvis **notification**, not back inside the app. This way you never leave the Settings screen, so the pairing handshake doesn't time out. If you don't see the notification banner, pull down the shade and look for the OpenCyvis "Enter pairing code" notification.
+</Callout>
+
+<Callout type="info">
+**Split-screen guide** — On devices that support split-screen (Android 12L+), OpenCyvis will automatically open the pairing screen side-by-side with the Wireless debugging page, so you can see the code and type it without switching apps.
+
+**Notification on Chinese ROMs** — Some Chinese OEMs (MIUI, ColorOS, OriginOS) suppress notification banners by default or hide them below other notifications. If the notification doesn't appear as a banner, **pull the shade all the way down** and scroll to find the OpenCyvis notification. On MIUI, you may also need to switch notification style to "Android style" in system settings.
 </Callout>
 
 ### Step 4: Grant Permissions
@@ -53,6 +59,10 @@ Different manufacturers place wireless debugging in different locations:
 **Settings → Additional settings → Developer options → Wireless debugging**
 
 If you don't see it, make sure MIUI Optimization is disabled in Developer options.
+
+<Callout type="warning">
+MIUI uses a custom notification style by default that doesn't support inline reply. Before pairing, go to **Settings → Apps → OpenCyvis → Notifications** and switch the notification style to **Android style** — otherwise the "Enter pairing code" input won't appear in the notification.
+</Callout>
 </details>
 
 <details>

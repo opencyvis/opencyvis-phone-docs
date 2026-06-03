@@ -15,7 +15,11 @@
 
 **Symptom:** Settings shows the 6-digit code, but there's no obvious place to type it — the app seems to be in the background.
 
-**Solution:** You enter the code into the OpenCyvis **notification**, not inside the app. **Pull down the notification shade**, find the OpenCyvis **"Enter pairing code"** notification, tap it, and type the 6-digit code. This is by design — it lets pairing finish even while the app is frozen in the background by the system. The notification may not pop up as a banner on some ROMs, so pull the shade down manually if needed.
+**Solution:** You enter the code into the OpenCyvis **notification**, not inside the app. **Pull down the notification shade**, find the OpenCyvis **"Enter pairing code"** notification, tap it, and type the 6-digit code. This is by design — entering the code in the notification means you never leave the Settings screen, so the pairing handshake doesn't time out.
+
+On devices that support split-screen (Android 12L+), OpenCyvis will automatically open the pairing screen side-by-side with the Wireless debugging page, making it easy to see the code and type it without switching apps.
+
+If you don't see the notification, pull the shade all the way down and scroll — some Chinese ROMs (MIUI, ColorOS, OriginOS) suppress notification banners or hide them below other notifications. On MIUI, you may also need to switch notification style to "Android style" in system settings.
 
 ## App says "No backend connected"
 
